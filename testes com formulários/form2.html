@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com resultado aparecendo no index 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Olá</h1>
+            <form action="script2.js">
+                <p><label for="idemail">Email: </label> <input type="email" name="email" id="idemail" required></p>
+                <p><label for="idsenha">Senha: </label> <input type="password" name="senha" id="idsenha" required></p>
+                <p><input type="button" value="Enviar Dados" onclick="aparecedivcomresultado()"></p>
+            </form>
+            <!--required não está funcionando em muitos navegadores, então tem que fazer um método pra resolver isso.-->
+        </div>
+
+        <div id="resultado">
+
+        </div>
+    </main>
+
+    <script src="script2.js"></script>
+</body>
+</html>
