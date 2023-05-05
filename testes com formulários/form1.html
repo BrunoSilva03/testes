@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com resultado aparecendo no index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        
+            <h1>Texto</h1>
+            
+        <form action="script1.js">
+            <p id="pemail"><label for="idemail">Email</label> <input type="email" name="email" id="idemail"></p>
+            <p id="psenha"><label for="idsenha">Senha</label> <input type="password" name="senha" id="idsenha"></p>
+            <p id="pbotao"><input type="button" value="Enviar" onclick="enviaDados()"></p>
+        </form>
+    </main>
+    <script src="script1.js"></script>
+</body>
+</html>
