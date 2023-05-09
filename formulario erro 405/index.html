@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+    <main>
+        <div class="tasks">
+            <p>A lista está vazia no momento. Clique em "+" para adicionar uma tarefa</p>
+        </div>
+
+        <div id="formulario">
+            <form action="script.js">
+                <p><label for="idtarefa">Tarefa: </label> <input type="text" name="tarefa" id="idtarefa"></p>
+                <p><label for="iddata">Data: </label> <input type="date" name="date" id="iddata"></p>
+                <p><label for="idhorario">Horário: </label> <input type="datetime" name="horario" id="idhorario"></p>
+            </form>
+        </div>
+
+        <div id="botaoMais">
+            <button id="buttonMais" onclick="adicionarTask()">
+            <img src="simbolo-mais-50px-50px.png" alt="Adicionar Task"></button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
