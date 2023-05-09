@@ -13,19 +13,20 @@
     </header>
     <main>
         <div class="tasks">
-            <p>A lista está vazia no momento. Clique em "+" para adicionar uma tarefa</p>
+            <p id="paragrafoinicial">A lista está vazia no momento. Clique em "+" para adicionar uma tarefa</p>
         </div>
 
         <div id="formulario">
             <form action="script.js">
-                <p><label for="idtarefa">Tarefa: </label> <input type="text" name="tarefa" id="idtarefa"></p>
-                <p><label for="iddata">Data: </label> <input type="date" name="date" id="iddata"></p>
-                <p><label for="idhorario">Horário: </label> <input type="datetime" name="horario" id="idhorario"></p>
+                <p id="ptarefa"><label for="idtarefa">Tarefa: </label> <input type="text" name="tarefa" id="idtarefa"></p>
+                <p id="pdata"><label for="iddata">Data: </label> <input type="date" name="date" id="iddata"></p>
+                <p id="phorario"><label for="idhorario">Horário: </label> <input type="datetime" name="horario" id="idhorario"></p>
+                <p id="pbotaoenviar"><input type="button" id="botaoenviar" value="Enviar dados" onclick="enviar()"></p>
             </form>
         </div>
 
         <div id="botaoMais">
-            <button id="buttonMais" onclick="adicionarTask()">
+            <button id="buttonMais" onclick="mostraFormulario()">
             <img src="simbolo-mais-50px-50px.png" alt="Adicionar Task"></button>
         </div>
     </main>
