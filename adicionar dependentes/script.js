@@ -1,3 +1,6 @@
+
+/*
+
 //init
 document.querySelector("#btnAdicionarDependentes").addEventListener("click", adicionarDependentes);
 
@@ -9,6 +12,8 @@ document.querySelector("#btnCapturarDados").addEventListener("click", () => {
     document.querySelector("#containerDados").innerHTML = JSON.stringify(dependentes, undefined, 4);
 });
 
+*/
+
 var dependentes = [{
     identificador: 13,
 
@@ -19,7 +24,7 @@ var dependentes = [{
 
 
 function carregarDependentes() {
-    let dependentes_container = document.querySelector('#dependentesContainer');
+    let dependentes_container = document.querySelector("#dependentesContainer");
 
     dependentes_container.innerHTML = "";
 
@@ -31,18 +36,19 @@ function carregarDependentes() {
 
         let idade = el.idade;
 
-        let dependente_container = `<div class="dependente" data-id="${identificador}">
+        let dependente_container = 
+        `<div class="dependente" data-id="${identificador}">
         
-        <input class="nome" placeholder="Digite o nome" type="text" value="${nome}">
+        <input class="nome" placeholder="Digite o nome" type="text" value="${nome}"/>
         
-        <input class="idade" placeholder="Digite a idade" type="number" value="${idade}">
+        <input class="idade" placeholder="Digite a idade" type="number" value="${idade}"/>
         
-        <div class="action">
-            <a href="#" class="salvar">salvar💾</a>
-            
-            <a href="#" class="remover">❌</a>
-            
-        </div>
+            <div class="action">
+                <a href="#" class="salvar">salvar💾</a>
+                
+                <a href="#" class="remover">❌</a>
+                
+            </div>
         
         </div>`;
 
@@ -57,14 +63,6 @@ function carregarDependentes() {
 }
 
 
-function adicionarDependentes() {
-    dependentes.push({identificador: "", nome: "", idade: ""});
-
-    carregarDependentes(); //Regenerar os elementos HTML após remover do JSON
-
-    travarOutros(document.querySelector("#dependentesContainer > div:last-child")); //Desabilitar todos os outros elementos, exceto o que acabou de ser adicionado
-}
-
 
 function removerDependentes() {
     document.querySelectorAll("#dependentesContainer .remover").forEach((el, i) => {
@@ -77,14 +75,26 @@ function removerDependentes() {
 }
 
 
+function adicionarDependentes() {
+    dependentes.push({identificador: "", nome: "", idade: ""});
+
+    carregarDependentes(); //Regenerar os elementos HTML após remover do JSON
+
+    travarOutros(document.querySelector("#dependentesContainer > div:last-child")); //Desabilitar todos os outros elementos, exceto o que acabou de ser adicionado
+}
+
+
+
+
+
 function salvarDependentes() {
     document.querySelectorAll("#dependentesContainer .salvar").forEach((el, i) => {
         el.addEventListener("click", () => {
             let identificador = el.parentElement.parentElement.getAttribute("data-id");
 
-            let nome = el.parentElement.parentElement.querySelector("nome").value;
+            let nome = el.parentElement.parentElement.querySelector(".nome").value;
 
-            let idade = el.parentElement.parentElement.querySelector("idade").value;
+            let idade = el.parentElement.parentElement.querySelector(".idade").value;
 
 
             if(!nome.length || !idade.length) { //Verifica se nome e idade foram preenchidos
@@ -122,6 +132,7 @@ function travarOutros(element) {
         document.querySelector("#containerDados").innerHTML = "";
 
         return false;
+    
 
     }
 
@@ -131,3 +142,13 @@ function travarOutros(element) {
         }
     });
 }
+
+
+//init
+document.querySelector("#btnAdicionarDependentes").addEventListener("click", adicionarDependentes);
+carregarDependentes();
+
+//capturarDados
+document.querySelector("#btnCapturarDados").addEventListener("click", ()=>{
+	document.querySelector("#containerDados").innerHTML = JSON.stringify(dependentes, undefined, 4);
+});
