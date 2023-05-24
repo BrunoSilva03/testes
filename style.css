@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center;
+}
+
+article {
+    margin: 10px 10px 20px 10px;
+
+}
+
+button {
+    background-color: black;
+    color: yellow;
+    border-radius: 300px;
+    padding: 30px;
+    
+}
+
+i {
+    font-size: 3em;
+}
+
+section#sessaobotao {
+    display: flex;
+    justify-content: end;
+    margin-top: 260px;
+}
