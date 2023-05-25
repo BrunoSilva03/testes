@@ -5,31 +5,19 @@
 //let noite = false;
 
 function modoDiamodoNoite() {
-    alert('Funcionou');
-    
-    let titulo = document.querySelector('h1');
+    alert('Funcionou')
     /*
-    let corpo = document.querySelector('body');
-    let asdivs = document.querySelectorAll('div');
-    let artigos = document.querySelector('.artigos');
+    let title = document.querySelectorAll('h1');
+    let divs = document.querySelectorAll('div');
     let sessao = document.getElementById('sessaobotao');
-    let botao = document.getElementById('botao');
-    let art2 = document.getElementById('artigo2');
-    */
 
 
     
-        //titulo.style.backgroundColor = '#000';
-        titulo.style.color = 'white';
-        /*
-        corpo.style.backgroundColor = 'black';
-        artigos.style.color = '#fff';
-        asdivs.style.color = 'blue';
-        sessao.style.backgroundColor = '#fff';
-        botao.style.backgroundColor = 'white';
-        art2.style.color = 'white';
+        title.style.backgroundColor = '#000';
+        divs.style.backgroundColor = '#000'
+        sessao.style.backgroundColor = '#000';
 
-        alert('Funcionou2')
+        alert('Funcionou')
 
     
     for(let i = 0; i < asDivs.length; i += 1) {
