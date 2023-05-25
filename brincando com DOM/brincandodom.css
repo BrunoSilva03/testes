@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    transition: background 0.3s linear;
+}
+
 h1 {
     text-align: center;
     margin-bottom: 30px;

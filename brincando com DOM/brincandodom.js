@@ -21,7 +21,7 @@ function mousefora() {
     divTeste.style.backgroundColor = 'white';
     divTeste.style.color = 'black';
 }
-
+//teste
 
 function alteraModoSite() {
     if(noite == false) {
