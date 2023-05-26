@@ -57,6 +57,47 @@ function mudaLayoult() {
         default:
             alert('Não anotamos essa cor no código, tente outra');
             break;
-        
+
+    }
+
+    diaDaSemana();
+}
+
+
+function diaDaSemana() {
+    var dia = new Date().getDay();
+    let texto = window.document.getElementById('texto');
+
+    switch (dia) {
+        case 0:
+            texto.innerHTML = "Hoje é Domingo";
+            break;
+
+        case 1:
+            texto.innerHTML = "Hoje é Segunda-Feira";
+            break;
+
+
+        case 2:
+            texto.innerHTML = "Hoje é Terça-Feira";
+            break;
+
+
+        case 3:
+            texto.innerHTML = "Hoje é Quarta-Feira";
+            break;
+
+
+        case 4:
+            texto.innerHTML = "Hoje é Quinta-Feira";
+            break;
+
+        case 5:
+            texto.innerHTML = "Hoje é Sexta-Feira";
+            break;
+
+
+        case 6:
+            texto.innerHTML = "Hoje é Sábado";
     }
 }
