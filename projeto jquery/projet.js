@@ -26,6 +26,7 @@ $(document).ready(function() {
 
         //$('a').css("color","green");
         $('a').css({color: 'green', display: 'block'})
+        $('h1, #link3').css("border-bottom", "solid 3px blue");
 
 
 
