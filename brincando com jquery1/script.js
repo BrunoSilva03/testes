@@ -19,5 +19,6 @@ $(document).ready(function(){
     //atacando todos os elementos após o selecionado, a partir da classe p1 todos os parágrafos vão receber as instruções
     $('.p1 ~ p').css({color:'black'});
     
+    
 
 });
