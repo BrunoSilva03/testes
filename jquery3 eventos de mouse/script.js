@@ -63,6 +63,22 @@ $(document).ready(function() {
     })
     
 
+    var b = 0;
+
+    $('.ev7').mouseover(function() {
+        b += 1;
+        ex.text("Mouse over: " + b);
+    }).mouseleave(function() {
+        ex.text("Mouse Leave");
+    });
+
+
+    $('.ev8').mousemove(function(move) {
+        var localx = move.pageX;
+        var localy = move.pageY;
+
+        ex.text("Movimento X: " + localx + " - Movimento Y: " + localy);
+    })
 
     
 });
