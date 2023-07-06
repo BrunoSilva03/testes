@@ -21,7 +21,6 @@ $(document).ready(function() {
     })
 
     
-
     //OU
 
     /*
@@ -36,6 +35,34 @@ $(document).ready(function() {
         ex.text("Você tirou o foco do input");
     })
     */
+
+
+
+    $('.ev4').hover(function() {
+        $(this).css("background", "#ccc");
+        ex.text("Você passou o mouse");
+    })
+
+
+    $('.ev5').mousedown(function() {
+        $(this).css("background", "#ccc");
+        ex.text("Você apertou(segurou o mouse)");
+    }).mouseup(function() {
+        $(this).css("background", "#000");
+        ex.text("Você soltou o mouse");
+    });
+
+
+    var a = 0;
+
+    $('.ev6').mouseenter(function() {
+        a += 1;
+        ex.text("Entradas do Mouse: " + a);
+    }).mouseout(function() {
+        ex.text("Saída do Mouse");
+    })
+    
+
 
     
 });
