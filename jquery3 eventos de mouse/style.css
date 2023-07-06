@@ -9,6 +9,7 @@ body{font:14px;}
     margin: 0 auto;
     text-align: center;
     color: white;
+    
 }
 
 .ev1 {
@@ -22,10 +23,12 @@ body{font:14px;}
     margin-top: 10px;
 }
 
+.ev3 {
+    margin: 0 auto;
+}
 
 
-
-p, input {
+p, input{
     width: 460px;
     padding: 5px;
     background: #000;
@@ -34,6 +37,14 @@ p, input {
     color: white;
     border: 5px solid #ccc;
     margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
 }
 
 

@@ -12,7 +12,19 @@ $(document).ready(function() {
         ex.text("Você deu Dois Cliques");
     })
 
+    $('.ev3').focusin(function() {
+        $(this).css("background", "#ccc");
+        ex.text("Você deu foco no input");
+    }).focusout(function() {
+        $(this).css("background", "#000");
+        ex.text("Você tirou o foco do input");
+    })
+
     
+
+    //OU
+
+    /*
     $('.ev3').focusin(function() {
         $(this).css("background", "#ccc");
         ex.text("Você deu foco no input");
@@ -22,18 +34,6 @@ $(document).ready(function() {
     $('.ev3').focusout(function() {
         $(this).css("background", "#000");
         ex.text("Você tirou o foco do input");
-    })
-    
-
-    //OU
-
-    /*
-    $('.ev3').focusin(function() {
-        $(this).css("background", "#ccc");
-        ex.text("Você deu foco no input");
-    }).focusout(function() {
-        $(this).css("background", "#000");
-        ex.text("Você deu foco no input");
     })
     */
 
