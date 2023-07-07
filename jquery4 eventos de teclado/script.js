@@ -20,5 +20,21 @@ $(function() {
                 
                 
             })
-    })
+    });
+
+
+    var ex = $('.ex1');
+    /*
+    $('.key').keypress(function() {
+        ex.text($(this).val());
+    });
+    
+   $('.key').keydown(function() {
+    ex.text($(this).val());
+   })
+   */
+
+   $('.key').keyup(function() {
+    ex.text($(this).val());
+   })
 });
