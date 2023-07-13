@@ -12,10 +12,9 @@
     font-weight: bold;
 }
 
-#pagina .caixa .tiulo:hover {
+#pagina .caixa .titulo:hover {
     cursor: pointer;
     background: #900000;
-    color: black;
 
 }
 
@@ -28,4 +27,3 @@
 #pagina .caixa .hide {
     display: none;
 }
-
