@@ -1,0 +1,31 @@
+#pagina .caixa {
+    margin-bottom: 1px;
+    border: 1px solid #A52A2A;
+    color: #333;
+    font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#pagina .caixa .titulo {
+    padding: 15px;
+    background: #A52A2A;
+    color: #fff;
+    font-weight: bold;
+}
+
+#pagina .caixa .tiulo:hover {
+    cursor: pointer;
+    background: #900000;
+    color: black;
+
+}
+
+#pagina .caixa .conteudo {
+    padding: 20px;
+    line-height: 150%;
+}
+
+
+#pagina .caixa .hide {
+    display: none;
+}
+
