@@ -14,5 +14,9 @@ $(function() {
                 $(this).addClass('show').removeClass('hide');
             })
         }
+
+
+        $('.titulo').focus();
+        $('.titulo').focusIn();
     })
 })
