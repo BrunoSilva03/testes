@@ -16,7 +16,6 @@ $(function() {
         }
 
 
-        $('.titulo').focus();
-        $('.titulo').focusIn();
+        
     })
 })
