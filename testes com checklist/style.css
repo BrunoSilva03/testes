@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #fff;
+    height: 450px;
+    width: 330px;
+    margin: 0 auto;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px black;
+    padding: 10px;
+    
+}
+
+
+body {
+    background: linear-gradient(45deg, black 50%, yellow 50%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+input::placeholder {
+    font-size: 1rem;
+   
+}
+
+li {
+   background: rgb(243, 235, 235);
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    color: black;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.504);
+    position: relative;
+}
+
+ .tarefa-feita {
+    background-color: rgb(148, 247, 148);
+    text-decoration: line-through;
+}
+
+.fa-check, .fa-trash {
+    position: absolute;
+    cursor: pointer;
+}
+
+.fa-check {
+    right: 40px;
+    color: rgb(21, 223, 21);
+}
+
+.fa-trash {
+    right: 10px;
+    color: red;
+}
