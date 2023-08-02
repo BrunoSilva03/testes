@@ -56,13 +56,13 @@ li {
     text-decoration: line-through;
 }
 
-.fa-check, .fa-trash {
+.fa-check, .fa-trash, .fa-pen {
     position: absolute;
     cursor: pointer;
 }
 
 .fa-check {
-    right: 40px;
+    right: 60px;
     color: rgb(21, 223, 21);
 }
 
@@ -70,3 +70,51 @@ li {
     right: 10px;
     color: red;
 }
+
+.fa-pen {
+    right: 30px;
+    color: green;
+}
+
+
+.formupdate {
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px black;
+    
+    
+}
+
+.formupdate input {
+    display: block;
+    margin-bottom: 100px;
+}
+
+#btncancelar {
+    background: red;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.456);
+}
+
+#btnconfirma {
+    background: green;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.456);
+}
+
+#areaBotoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
